@@ -1,0 +1,38 @@
+.footer__navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__navigation .text {
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.footer__navigation .text .disclaimer-premium__title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.footer__navigation .text .disclaimer-premium__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.disclaimer-premium__button button {
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
