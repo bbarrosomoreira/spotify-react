@@ -1,8 +1,8 @@
 .main__content {
-  max-width: 80vw;
-  height: 100vh;
-  margin-left: 320px;
-  margin-right: 56px;
+  width: calc(100vw - 374px);
+  right: 16px;
+  height: 80vh;
+  overflow: hidden;
 }
 
 /* PLAYLIST */
@@ -10,7 +10,6 @@
 .playlist-container {
   height: 68vh;
   padding-top: 16px;
-  margin: 10px;
   border-radius: 10px;
   background-color: #121212;
 }
@@ -36,25 +35,36 @@
 .offer__scroll-container {
   max-height: 43vh;
   margin: 24px;
-  overflow-y: auto;
+  overflow-y: scroll;
+  padding-right: 10px;
 }
 
 .offer__scroll-container::-webkit-scrollbar {
-  width: 1px;
+  width: 10px;
 }
 
 .offer__scroll-container::-webkit-scrollbar-thumb {
-  background-color: transparent;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(197, 184, 184, 0.8);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
+
+.offer__scroll-container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
 /*FIM SCROLL */
 
 .offer__list-item {
   display: grid;
   justify-items: center;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-gap: 16px;
   gap: 16px;
-  margin-bottom: 16px;
+  margin: 0 auto;
 
   /* CÓDIGO COM JS CALCULANDO OS CARDS POR COLUNA */
   /* display: grid
@@ -65,10 +75,13 @@
 
 .cards {
   position: relative;
-  width: 220px;
-  height: 200px;
+  width: 100%;
   overflow: hidden;
   border-radius: 8px;
+}
+
+.cards div {
+  padding-bottom: 100%;
 }
 
 .cards span {
@@ -132,7 +145,7 @@
   right: 0;
   bottom: 0;
   height: auto;
-  width: 107px;
+  width: 70%;
   transform: rotate(25deg) translate(18%, -2%);
 }
 
@@ -221,7 +234,7 @@
   position: relative;
 }
 
-.play .fa-play {
+.play {
   position: absolute;
   right: 10px;
   top: 120px;
@@ -233,12 +246,12 @@
   transition: all ease 0.4s;
 }
 
-.artist-card:hover .play .fa-play {
+.artist-card:hover .play {
   opacity: 1;
   transform: translateY(-20px);
 }
 
-.play .fa-play:hover {
+.play:hover {
   padding: 20px;
   cursor: pointer;
 }

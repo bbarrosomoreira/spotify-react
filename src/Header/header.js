@@ -19,10 +19,10 @@ const Header = () => {
         <img src={search} alt="" />
         <input
           id="search-input"
-          maxlength="800"
-          autocorrect="off"
-          autocapitalize="off"
-          spellcheck="false"
+          maxLength="800"
+          autoCorrect="off"
+          autoCapitalize="off"
+          spellCheck="false"
           type="text"
           placeholder="O que você quer ouvir?"
           value=""

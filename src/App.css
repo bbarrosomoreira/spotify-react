@@ -1,3 +1,17 @@
 body {
   background-color: #000;
+  font-family: var(--font-dm-sans);
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  justify-content: start;
+}
+
+.app__content {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 10px;
 }

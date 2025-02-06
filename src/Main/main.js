@@ -15,6 +15,8 @@ import playlist12 from "../assets/playlist/12.jpeg";
 import playlist13 from "../assets/playlist/13.jpeg";
 import playlist14 from "../assets/playlist/14.jpeg";
 import playlist15 from "../assets/playlist/15.jpeg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay } from "@fortawesome/free-solid-svg-icons";
 
 const Main = () => {
   return (
@@ -128,7 +130,7 @@ const Main = () => {
               <div className="card-img">
                 <img id="artist-img" className="artist-img" />
                 <div className="play">
-                  <span className="fa fa-solid fa-play"></span>
+                  <FontAwesomeIcon icon={faPlay} />
                 </div>
               </div>
               <div className="card-text">
