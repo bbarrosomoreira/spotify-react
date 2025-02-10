@@ -28,7 +28,7 @@ Este projeto foi desenvolvido durante a **Imersão Front-End da Alura**, com o d
 
 ### Clonar o repositório:
 ```bash
- git clone https://github.com/seu-usuario/nome-do-repositorio.git
+ git clone https://github.com/bbarrosomoreira/spotify-react.git
 ```
 
 ### Rodar versão estática (HTML, CSS e JS puro):
